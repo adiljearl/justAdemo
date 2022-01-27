@@ -1,0 +1,44 @@
+<ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+
+
+    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+        <a class="nav-link" href="/admin/profile/viewProfile">
+            <i class="fa fa-fw fa-user"></i>
+            <span class="nav-link-text">Profile</span>
+        </a>
+    </li>
+
+    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+        <a class="nav-link" href="/admin/profile/editProfile">
+            <i class="fa fa-fw fa-gear"></i>
+            <span class="nav-link-text">Edit Profile</span>
+        </a>
+    </li>
+
+
+    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+        <a class="nav-link" href="/admin">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Dashboard</span>
+        </a>
+    </li>
+
+    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapsePosts"
+            data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-wrench"></i>
+            <span class="nav-link-text">Posts</span>
+        </a>
+        <ul class="sidenav-second-level collapse" id="collapsePosts">
+            {{!-- <li>
+                <a href="/admin/posts/my-posts">My Posts</a>
+            </li> --}}
+            <li>
+                <a href="/admin/posts/allPosts">All Posts</a>
+            </li>
+            <li>
+                <a href="/admin/posts/create">Create Posts</a>
+            </li>
+        </ul>
+    </li>
+</ul>
