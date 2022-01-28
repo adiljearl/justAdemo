@@ -9,7 +9,7 @@ const methodOverride = require("method-override");
 const upload = require("express-fileupload");
 const { mongoDbUrl } = require("./config/config");
 const { select, generateTime } = require("./helpers/handlebars-helpers");
-const passport = require("passport");
+//const passport = require("passport");
 mongoose.set("useCreateIndex", true);
 mongoose.set("useFindAndModify", false);
 
@@ -28,8 +28,8 @@ const {
 const insecureHandlebars = allowInsecurePrototypeAccess(Handlebars);
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use(passport.initialize());
-app.use(passport.session());
+// app.use(passport.initialize());
+// app.use(passport.session());
 
 app.engine(
   "handlebars",
