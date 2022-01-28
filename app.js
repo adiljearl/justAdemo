@@ -62,6 +62,4 @@ app.use("/login", login);
 app.use("/admin/posts", posts);
 app.use("/admin/profile", profile);
 
-app.listen(5000, () => {
-  console.log("working !!!");
-});
+app.listen(process.env.PORT || 5000, () => {});
